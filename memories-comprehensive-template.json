@@ -1,0 +1,427 @@
+{
+  "exportDate": "2025-10-20T00:00:00.000Z",
+  "version": "2.0",
+  "description": "Comprehensive relationship memory template - Edit dengan data Anda yang sebenarnya",
+  "memories": [
+    {
+      "key": "your_name",
+      "value": "Nazwan",
+      "category": "personal",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "identity,self",
+      "importance": 5
+    },
+    {
+      "key": "partner_name",
+      "value": "Pasya",
+      "category": "personal",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "identity,partner",
+      "importance": 5
+    },
+    {
+      "key": "your_nickname",
+      "value": "Wan",
+      "category": "personal",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "identity,nickname",
+      "importance": 4
+    },
+    {
+      "key": "partner_nickname",
+      "value": "Bocil",
+      "category": "personal",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "identity,nickname,pet_name",
+      "importance": 4
+    },
+    {
+      "key": "your_personality",
+      "value": "Romantis, perhatian, playful, kadang jail tapi gak nyakitin",
+      "category": "personal",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "personality,traits",
+      "importance": 3
+    },
+    {
+      "key": "anniversary_date",
+      "value": "22 Oktober 2022",
+      "category": "relationship",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "milestone,important_date",
+      "importance": 5
+    },
+    {
+      "key": "how_you_met",
+      "value": "Ketemu di kampus, jurusan yang sama",
+      "category": "relationship",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "story,origin",
+      "importance": 4
+    },
+    {
+      "key": "first_date_place",
+      "value": "Starbucks Tunjungan Plaza",
+      "category": "relationship",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "milestone,place",
+      "importance": 4
+    },
+    {
+      "key": "first_impression",
+      "value": "Dia malu-malu tapi lucu, senyumnya bikin meleleh",
+      "category": "relationship",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "story,feelings",
+      "importance": 3
+    },
+    {
+      "key": "favorite_food",
+      "value": "Sushi, Pizza Margherita, Nasi Goreng",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "food,favorite",
+      "importance": 5
+    },
+    {
+      "key": "least_favorite_food",
+      "value": "Petai, Jengkol",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "food,dislike",
+      "importance": 3
+    },
+    {
+      "key": "favorite_drink",
+      "value": "Matcha Latte, Boba Tea",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "drink,favorite",
+      "importance": 5
+    },
+    {
+      "key": "favorite_color",
+      "value": "Pink, Lavender",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "color,favorite",
+      "importance": 4
+    },
+    {
+      "key": "favorite_movie",
+      "value": "Your Name, La La Land",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "entertainment,movie",
+      "importance": 3
+    },
+    {
+      "key": "favorite_music",
+      "value": "Lauv, Taylor Swift, Indonesian Indie",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "entertainment,music",
+      "importance": 3
+    },
+    {
+      "key": "hobby_fav",
+      "value": "Main Mobile Legends, baca novel romance, nonton K-drama",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "hobbies,activities",
+      "importance": 4
+    },
+    {
+      "key": "comfort_food",
+      "value": "Indomie + telur pas lagi sedih",
+      "category": "preferences",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "food,comfort,emotional",
+      "importance": 4
+    },
+    {
+      "key": "your_favorite_food",
+      "value": "Ayam Geprek, Bakso",
+      "category": "preferences",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "food,favorite",
+      "importance": 3
+    },
+    {
+      "key": "your_hobbies",
+      "value": "Coding, main PS5, nonton anime",
+      "category": "preferences",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "hobbies,activities",
+      "importance": 3
+    },
+    {
+      "key": "favorite_date_spot_1",
+      "value": "Starbucks Tunjungan Plaza - tempat ngobrol favorit, cozy",
+      "category": "places",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "place,date,regular",
+      "importance": 4
+    },
+    {
+      "key": "favorite_date_spot_2",
+      "value": "Sushi Tei Grand Indonesia - sushi favorit dia",
+      "category": "places",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "place,date,restaurant",
+      "importance": 4
+    },
+    {
+      "key": "usual_order_starbucks",
+      "value": "Dia: Caramel Macchiato, Aku: Americano",
+      "category": "places",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "food,drink,habit",
+      "importance": 3
+    },
+    {
+      "key": "dream_destination_1",
+      "value": "Jepang (Tokyo & Kyoto) - pengen foto di musim sakura",
+      "category": "places",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "travel,future,dream",
+      "importance": 3
+    },
+    {
+      "key": "dream_destination_2",
+      "value": "Korea (Seoul) - dia K-drama addict",
+      "category": "places",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "travel,future,dream",
+      "importance": 3
+    },
+    {
+      "key": "love_language",
+      "value": "Words of affirmation, Quality time, Acts of service",
+      "category": "emotional",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "emotional,communication,needs",
+      "importance": 5
+    },
+    {
+      "key": "what_makes_her_happy",
+      "value": "Surprise kecil, good morning text, dengerin ceritanya, inget detail kecil, random compliment",
+      "category": "emotional",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "emotional,happiness,triggers",
+      "importance": 5
+    },
+    {
+      "key": "what_makes_her_sad",
+      "value": "Telat bales lama, lupa tanggal penting, gak dengerin, janji gak ditepati",
+      "category": "emotional",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "emotional,sadness,triggers",
+      "importance": 5
+    },
+    {
+      "key": "comfort_style",
+      "value": "Butuh didengarkan dulu sebelum dikasih solusi, peluk virtual, ingetin kenangan happy",
+      "category": "emotional",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "emotional,comfort,support",
+      "importance": 5
+    },
+    {
+      "key": "greeting_style",
+      "value": "Hai sayang 💕, Halo bocil, Wopyu",
+      "category": "communication",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "communication,greeting,style",
+      "importance": 4
+    },
+    {
+      "key": "pet_names_used",
+      "value": "sayang, bocil, seng, sayanggg (dengan huruf berulang)",
+      "category": "communication",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "communication,pet_name,affection",
+      "importance": 4
+    },
+    {
+      "key": "emoji_favorites",
+      "value": "💕🥺✨😊🍕❤️",
+      "category": "communication",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "communication,emoji,style",
+      "importance": 3
+    },
+    {
+      "key": "common_phrases",
+      "value": "udah makan belum?, minum air ya, istirahat dulu, aku kangen kamu",
+      "category": "communication",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "communication,habits,caring",
+      "importance": 4
+    },
+    {
+      "key": "inside_joke_1",
+      "value": "Wopyu/Wopyumoll - kata sayang versi kita",
+      "category": "inside_jokes",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "joke,unique,affection",
+      "importance": 4
+    },
+    {
+      "key": "inside_joke_2",
+      "value": "Dia suka bilang 'gimana nih' pas bingung mau jawab apa",
+      "category": "inside_jokes",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "joke,habit,cute",
+      "importance": 3
+    },
+    {
+      "key": "special_moment_1",
+      "value": "Valentine 2023: Surprise bunga mawar di Sushi Tei, dia nangis happy",
+      "category": "special_moments",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "milestone,romantic,memorable",
+      "importance": 5
+    },
+    {
+      "key": "special_moment_2",
+      "value": "Anniversary 1 tahun ke Bali, foto sunset di Uluwatu, moment paling romantis",
+      "category": "special_moments",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "milestone,travel,romantic",
+      "importance": 5
+    },
+    {
+      "key": "special_moment_3",
+      "value": "Waktu hujan deras aku beliin dia payung pink, dari situ dia tau aku perhatian",
+      "category": "special_moments",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "caring,sweet,memorable",
+      "importance": 4
+    },
+    {
+      "key": "partner_birthday",
+      "value": "15 Maret",
+      "category": "relationship",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "important_date,birthday",
+      "importance": 5
+    },
+    {
+      "key": "your_birthday",
+      "value": "8 Juli",
+      "category": "personal",
+      "who": "self",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "important_date,birthday",
+      "importance": 4
+    },
+    {
+      "key": "future_goal_1",
+      "value": "Lulus kuliah bareng tahun 2026",
+      "category": "goals",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "future,education,together",
+      "importance": 4
+    },
+    {
+      "key": "future_goal_2",
+      "value": "Menikah sekitar 2027-2028",
+      "category": "goals",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "future,marriage,commitment",
+      "importance": 5
+    },
+    {
+      "key": "future_goal_3",
+      "value": "Traveling ke Jepang & Korea bareng",
+      "category": "goals",
+      "who": "both",
+      "confidence": 1.0,
+      "source": "manual",
+      "tags": "future,travel,dream",
+      "importance": 3
+    }
+  ]
+}

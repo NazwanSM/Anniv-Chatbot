@@ -1,0 +1,62 @@
+{
+  "exportDate": "2025-10-20T00:00:00.000Z",
+  "version": "1.0",
+  "memories": [
+    {
+      "key": "favorite_food",
+      "value": "Sushi",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "favorite_drink",
+      "value": "Matcha Latte",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "favorite_color",
+      "value": "Pink",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "place_fav",
+      "value": "Bali",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "hobby_fav",
+      "value": "Main game dan baca buku",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "anniversary_date",
+      "value": "22 Oktober 2022",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "favorite_movie",
+      "value": "Your Name",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    },
+    {
+      "key": "favorite_song",
+      "value": "Perfect - Ed Sheeran",
+      "who": "partner",
+      "confidence": 1.0,
+      "source": "manual"
+    }
+  ]
+}
