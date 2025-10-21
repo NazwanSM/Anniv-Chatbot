@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.production
+    environment:
+      # Pastikan base URL ke service ollama (bukan localhost)
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - LOVE_MODEL=${LOVE_MODEL:-qwen2.5:8b-instruct}
+      - MEM_DB_PATH=/app/data/memories.db
+    volumes:
+      - ./data/db:/app/data   # persist SQLite
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./data/ollama:/root/.ollama   # persist models
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+    restart: unless-stopped
