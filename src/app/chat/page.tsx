@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Card from '@/components/Card';
 
@@ -37,14 +38,12 @@ export default function ChatPage() {
         setLoading(false);
     };
 
-    const quick = (s: string) => setVal(s);
-
     return (
         <>
-        <Header title="Chatbot Nazwan" subtitle="Nazwan • always here for you" />
-        <Card className="p-3">
+        <Header title="AnnivBot 3.0" subtitle="Nazwan • selalu ada untuk kamu" />
+        <Card className="p-2 sm:p-3">
             {/* viewport */}
-            <div ref={viewportRef} className="h-[62vh] overflow-y-auto pr-1">
+            <div ref={viewportRef} className="h-[55vh] sm:h-[62vh] overflow-y-auto pr-1">
             <div className="px-1 pt-1 pb-3 space-y-3">
                 <AnimatePresence initial={false}>
                 {messages.map((m, i) => (
@@ -57,8 +56,8 @@ export default function ChatPage() {
                     className={`flex ${m.role==='assistant' ? 'justify-start' : 'justify-end'}`}
                     >
                     <div className={`
-                        max-w-[78%] leading-relaxed text-[15px]
-                        px-4 py-2 rounded-2xl shadow-sm ring-1
+                        max-w-[85%] sm:max-w-[78%] leading-relaxed text-sm sm:text-[15px]
+                        px-3 sm:px-4 py-2 rounded-2xl shadow-sm ring-1
                         ${m.role==='assistant'
                         ? 'bg-white/90 ring-black/5'
                         : 'bg-gradient-to-br from-pink-500 to-purple-500 text-white ring-black/0'}
@@ -74,7 +73,7 @@ export default function ChatPage() {
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                     className="flex justify-start"
                     >
-                    <div className="px-4 py-2 rounded-2xl bg-white/90 ring-1 ring-black/5 shadow-sm">
+                    <div className="px-3 sm:px-4 py-2 rounded-2xl bg-white/90 ring-1 ring-black/5 shadow-sm">
                         <span className="inline-flex items-center gap-1 text-slate-500">
                         <i className="h-2 w-2 rounded-full bg-slate-400 animate-pulse" />
                         <i className="h-2 w-2 rounded-full bg-slate-400 animate-pulse delay-150" />
@@ -89,17 +88,17 @@ export default function ChatPage() {
 
             {/* composer */}
             <div className="flex items-center gap-2">
-            <div className="flex-1 rounded-full bg-white/90 ring-1 ring-black/5 px-4 py-2 shadow-sm focus-within:ring-pink-300 transition">
+            <div className="flex-1 rounded-full bg-white/90 ring-1 ring-black/5 px-3 sm:px-4 py-2 shadow-sm focus-within:ring-pink-300 transition">
                 <input
                 value={val} onChange={e=>setVal(e.target.value)}
                 onKeyDown={e=>e.key==='Enter' && send()}
-                className="w-full bg-transparent outline-none placeholder:text-slate-400"
+                className="w-full bg-transparent outline-none placeholder:text-slate-400 text-sm sm:text-base"
                 placeholder="Tulis sesuatu yang manis…"
                 />
             </div>
             <button
                 onClick={send}
-                className="rounded-full px-4 py-2 bg-gradient-to-br from-pink-500 to-purple-500 text-white shadow-md hover:shadow-lg active:scale-[.98] transition"
+                className="rounded-full px-3 sm:px-4 py-2 bg-gradient-to-br from-pink-500 to-purple-500 text-white text-sm sm:text-base shadow-md hover:shadow-lg active:scale-[.98] transition"
                 aria-label="Kirim"
             >
                 Kirim
@@ -108,9 +107,18 @@ export default function ChatPage() {
         </Card>
 
         {/* footer small */}
-        <div className="mt-3 text-center text-xs text-slate-500">
-            Bot ini masih blom bisa jadi Nazwan sepenuhnya, 
-            tapi tenang aja kamu udah punya yang aslinya. 🤍
+        <div className="mt-3 flex flex-col items-center gap-2">
+            <Link
+                href="/"
+                className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-pink-500 transition"
+            >
+                <span>←</span>
+                <span>Kembali ke Home</span>
+            </Link>
+            <div className="text-center text-xs text-slate-500">
+                Bot ini masih blom bisa jadi Nazwan sepenuhnya, 
+                tapi tenang aja kamu udah punya yang aslinya. 🤍
+            </div>
         </div>
         </>
     );

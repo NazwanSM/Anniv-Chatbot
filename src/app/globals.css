@@ -12,3 +12,7 @@ h1,h2,h3 { font-family:"Plus Jakarta Sans", InterVariable, system-ui, -apple-sys
 
 .lift { transition: transform .2s ease, box-shadow .2s ease; }
 .lift:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.06); }
+
+.bg-size-200 { background-size: 200% 100%; }
+.bg-pos-0 { background-position: 0% 0%; }
+.bg-pos-100 { background-position: 100% 0%; }

@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Card from '@/components/Card';
 
@@ -218,7 +219,7 @@ export default function MemoriesPage() {
         <>
             <Header title="Our Memories" subtitle="Hal-hal kecil yang kamu sukai" />
             
-            <Card className="p-4">
+            <Card className="p-3 sm:p-4">
                 {/* Toolbar */}
                 <div className="mb-4 flex gap-2">
                     <button
@@ -234,18 +235,18 @@ export default function MemoriesPage() {
                                 tags: ''
                             });
                         }}
-                        className="flex-1 py-2.5 px-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium shadow-sm hover:shadow-md transition"
+                        className="flex-1 py-2 sm:py-2.5 px-3 sm:px-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium text-sm sm:text-base shadow-sm hover:shadow-md transition"
                     >
                         {showForm ? '✕ Batal' : '+ Tambah Memory'}
                     </button>
                     <button
                         onClick={handleExport}
-                        className="py-2.5 px-4 bg-blue-500 text-white rounded-xl font-medium shadow-sm hover:shadow-md transition"
+                        className="py-2 sm:py-2.5 px-3 sm:px-4 bg-blue-500 text-white rounded-xl font-medium shadow-sm hover:shadow-md transition text-sm sm:text-base"
                         title="Export to JSON"
                     >
                         📥
                     </button>
-                    <label className="py-2.5 px-4 bg-green-500 text-white rounded-xl font-medium shadow-sm hover:shadow-md transition cursor-pointer" title="Import from JSON">
+                    <label className="py-2 sm:py-2.5 px-3 sm:px-4 bg-green-500 text-white rounded-xl font-medium shadow-sm hover:shadow-md transition cursor-pointer text-sm sm:text-base" title="Import from JSON">
                         📤
                         <input
                             type="file"
@@ -263,13 +264,13 @@ export default function MemoriesPage() {
                         placeholder="🔍 Search memories..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-pink-400 transition"
+                        className="w-full px-3 sm:px-4 py-2 border border-gray-200 rounded-xl text-sm sm:text-base focus:outline-none focus:border-pink-400 transition"
                     />
                     
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex gap-1.5 sm:gap-2 flex-wrap">
                         <button
                             onClick={() => setSelectedCategory('all')}
-                            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${
+                            className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm font-medium transition ${
                                 selectedCategory === 'all' 
                                     ? 'bg-gray-700 text-white' 
                                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -283,13 +284,15 @@ export default function MemoriesPage() {
                                 <button
                                     key={cat.value}
                                     onClick={() => setSelectedCategory(cat.value)}
-                                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${
+                                    className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm font-medium transition ${
                                         selectedCategory === cat.value
                                             ? cat.color
                                             : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                                     }`}
                                 >
-                                    {cat.label} ({count})
+                                    <span className="hidden sm:inline">{cat.label}</span>
+                                    <span className="sm:hidden">{cat.label.split(' ')[0]}</span>
+                                    <span className="ml-1">({count})</span>
                                 </button>
                             );
                         })}
@@ -353,13 +356,13 @@ export default function MemoriesPage() {
                                     />
                                 </div>
                                 
-                                <div className="grid grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     <div>
                                         <label className="block text-sm font-medium text-slate-700 mb-1">Category</label>
                                         <select
                                             value={formData.category}
                                             onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                                            className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-pink-300 focus:border-transparent"
+                                            className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm sm:text-base focus:ring-2 focus:ring-pink-300 focus:border-transparent"
                                         >
                                             {CATEGORIES.map(cat => (
                                                 <option key={cat.value} value={cat.value}>
@@ -374,7 +377,7 @@ export default function MemoriesPage() {
                                         <select
                                             value={formData.who}
                                             onChange={(e) => setFormData({ ...formData, who: e.target.value })}
-                                            className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-pink-300 focus:border-transparent"
+                                            className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm sm:text-base focus:ring-2 focus:ring-pink-300 focus:border-transparent"
                                         >
                                             <option value="partner">Partner (Pasya)</option>
                                             <option value="self">Self (Me)</option>
@@ -497,10 +500,19 @@ export default function MemoriesPage() {
                 )}
             </Card>
 
-            <div className="mt-3 text-center text-xs text-slate-500 space-y-1">
-                <div>💡 Tip: Use categories & importance to organize memories better</div>
-                <div>🔍 Search by key, value, or tags | 🏷️ Filter by category</div>
-                <div>📥 Export untuk backup | 📤 Import comprehensive-template.json</div>
+            <div className="mt-3 flex flex-col items-center gap-2">
+                <Link
+                    href="/"
+                    className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-pink-500 transition"
+                >
+                    <span>←</span>
+                    <span>Kembali ke Home</span>
+                </Link>
+                <div className="text-center text-xs text-slate-500 space-y-1">
+                    <div>💡 Tip: Use categories & importance to organize memories better</div>
+                    <div>🔍 Search by key, value, or tags | 🏷️ Filter by category</div>
+                    <div>📥 Export untuk backup | 📤 Import comprehensive-template.json</div>
+                </div>
             </div>
         </>
     );

@@ -1,6 +1,6 @@
 import './globals.css';
 
-export const metadata = { title: 'Love Chat', description: 'For us 💖' };
+export const metadata = { title: 'AnnivBot 3.0', description: 'For us 💖' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,8 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             opacity: .15
           }}/>
         </div>
-        <div className="min-h-screen flex items-center justify-center px-4">
-          <div className="w-full max-w-md">
+        <div className="min-h-screen flex items-center justify-center px-3 sm:px-4 py-6 sm:py-8">
+          <div className="w-full max-w-md sm:max-w-lg">
             {children}
           </div>
         </div>
